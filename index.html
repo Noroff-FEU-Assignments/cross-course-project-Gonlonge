@@ -1,28 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="awesome games for sale" />
-    <title>home</title>
-  </head>
-  <body>
-    <header>
-      <link rel="stylesheet" href="index.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="awesome games for sale" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>home</title>
+  <link href="css/style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Play:wght@700&family=Tinos&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <header class="logo-container">
+      <img src="images/logo.png" alt="logo" class="gamehub-logo" />
     </header>
-    <section>
+  </div>
+  <div class="headermenu vertical">
+    <div class="main-container nav-container">
+      <label for="hamburger-menu" class="hamburger-label">
+        <i class="fas fa-bars fa-3x"></i>
+      </label>
+      <i class="fas fa-user fa-3x action-icon"></i>
+      <i class="fas fa-cart-plus fa-3x action-icon"></i>
+      <i class="fas fa-plus fa-3x action-icon"></i>
+      <input type="checkbox" id="hamburger-menu" />
+      <nav>
+        <ul>
+          <li><a href="index.html" class="home-site">Home</a></li>
+          <li><a href="buy.html">Buy Games</a></li>
+          <li><a href="viewallgames.html">View all Games</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="section__space">
       <h1>Most Popular Games</h1>
-      <img src="images/cover1.jpg" alt="game covers" class="imagesize" />
-      <p>Game Title</p>
-      <p>50€</p>
-      <p>Game Title</p>
-      <p>50€</p>
-      <p>Game Title</p>
-      <p>50€</p>
-      <p>Game Title</p>
-      <p>50€</p>
-      <p>Game Title</p>
-      <p>50€</p>
+    </div>
+    <section class="featured">
+      <div class="column">
+        <img src="images/cover1.jpg" alt="game covers" />
+        <p class="textspace">Game Title</p>
+        <p class="boldtext">50€</p>
+        <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+      </div>
+      <div class="column">
+        <img src="images/cover2.jpg" alt="game covers" />
+        <p class="textspace">Game Title</p>
+        <p class="boldtext">50€</p>
+        <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+      </div>
+      <div class="column">
+        <img src="images/cover3.jpg" alt="game covers" />
+        <p class="textspace">Game Title</p>
+        <p class="boldtext">50€</p>
+        <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+      </div>
+      <div class="column">
+        <img src="images/cover4.jpg" alt="game covers" />
+        <p class="textspace">Game Title</p>
+        <p class="boldtext">50€</p>
+        <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+      </div class="desktopsize">
+
     </section>
-  </body>
+    <br />
+    <button class="cta button-view-games" onclick="window.location.href='viewallgames.html'">View Games</button>
+    <div class="section__space">
+      <h1>Games for Sale</h1>
+      <section class="featured">
+        <div class="column">
+          <img src="images/cover5.jpg" alt="game covers" />
+          <p class="textspace">Game Title</p>
+          <p class="boldtext">50€</p>
+          <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+        </div>
+        <div class="column">
+          <img src="images/cover2.jpg" alt="game covers" />
+          <p class="textspace">Game Title</p>
+          <p class="boldtext">50€</p>
+          <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+        </div>
+        <div class="column">
+          <img src="images/cover3.jpg" alt="game covers" />
+          <p class="textspace">Game Title</p>
+          <p class="boldtext">50€</p>
+          <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+        </div>
+        <div class="column">
+          <img src="images/cover4.jpg" alt="game covers" />
+          <p class="textspace">Game Title</p>
+          <p class="boldtext">50€</p>
+          <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+        </div class="desktopsize">
+      </section>
+      <br />
+      <button class="cta button-view-games" onclick="window.location.href='viewallgames.html'">View Games</button>
+      <div class="section__space">
+        <h1>Pre-Owned Games</h1>
+        <section class="featured">
+          <div class="column">
+            <img src="images/cover5.jpg" alt="game covers" />
+            <p class="textspace">Game Title</p>
+            <p class="boldtext">50€</p>
+            <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+          </div>
+          <div class="column">
+            <img src="images/cover1.jpg" alt="game covers" />
+            <p class="textspace">Game Title</p>
+            <p class="boldtext">50€</p>
+            <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+          </div>
+          <div class="column">
+            <img src="images/cover2.jpg" alt="game covers" />
+            <p class="textspace">Game Title</p>
+            <p class="boldtext">50€</p>
+            <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+          </div>
+          <div class="column">
+            <img src="images/cover3.jpg" alt="game covers" />
+            <p class="textspace">Game Title</p>
+            <p class="boldtext">50€</p>
+            <button class="cta" onclick="window.location.href='buy.html'">Buy</button>
+          </div class="desktopsize">
+        </section>
+        <br />
+        <button class="cta button-view-games" onclick="window.location.href='viewallgames.html'">View Games</button>
+      </div class="desktopsize">
+      </section>
+    </div>
+  </div>
+  <footer>
+    <div class="main-container">
+      <i class="fab fa-instagram-square fa-3x footer-logo"></i>
+      <i class="fab fa-facebook fa-3x footer-logo"></i>
+    </div>
+  </footer>
+</body>
+
 </html>

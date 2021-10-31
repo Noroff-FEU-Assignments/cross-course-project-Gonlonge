@@ -1,3 +1,178 @@
-.imagesize {
-  width: 30px;
+/*fonts*/
+
+h1 {
+  font-family: "Play", sans-serif, serif;
+}
+
+body {
+  font-family: "roboto";
+  margin: 0px;
+}
+
+.boldtext,
+.cta {
+  font-family: "roboto-bold";
+}
+
+/*header seachmenu*/
+
+.gamehub-logo {
+  margin-bottom: 30px;
+  height: 160px;
+}
+
+.action-icon {
+  float: right;
+  margin-left: 25px;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  background: #202441;
+  z-index: 1000;
+}
+
+nav li {
+  display: block;
+  padding: 25px 20px;
+}
+
+.search-bar {
+  height: 40px;
+  float: left;
+}
+
+#hamburger-menu {
+  display: none;
+  float: left;
+}
+
+.hamburger-label {
+  float: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.headermenu {
+  background-color: #202441;
+  height: 60px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #f7710e;
+}
+
+.home-site {
+  font-family: "roboto-bold";
+  font-size: 20px;
+}
+
+/*games sections*/
+
+.cta {
+  background-color: #202441;
+  color: #f7710e;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: 100%;
+  border-width: 0;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.cta:hover {
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #929292;
+}
+
+.button-view-games {
+  background-color: white;
+  border: 2px solid #f7710e;
+  color: #202441;
+  max-width: 200px;
+}
+
+.textspace {
+  line-height: 0px;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+
+.featured img {
+  width: 100%;
+}
+
+.section__space {
+  margin-top: 60px;
+}
+
+footer {
+  background-color: #202441;
+  width: auto;
+  height: 120px;
+  margin-top: 100px;
+}
+
+.footer-logo {
+  float: right;
+  margin-left: 25px;
+  margin-top: 35px;
+}
+
+i {
+  color: white;
+}
+
+.logo-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*sceen devices*/
+
+@media (min-width: 400px) {
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .featured {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .cta2 {
+    transform: translate(165%);
+  }
+}
+
+@media (min-width: 800px) {
+  .featured {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .cta2 {
+    transform: translate(165%);
+  }
+  .logo-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
 }
