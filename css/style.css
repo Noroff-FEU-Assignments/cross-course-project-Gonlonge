@@ -86,16 +86,17 @@ a {
 }
 
 .cta:hover {
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   cursor: pointer;
-  background-color: #929292;
+  background-color: #32366582;
 }
 
 .button-view-games {
   background-color: white;
   border: 2px solid #f7710e;
   color: #202441;
-  max-width: 200px;
+  max-width: 210px;
+  margin-top: 20px;
 }
 
 .textspace {
@@ -119,7 +120,7 @@ a {
 }
 
 .section__space {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 footer {
@@ -158,8 +159,11 @@ i {
   .featured {
     grid-template-columns: repeat(3, 1fr);
   }
-  .cta2 {
-    transform: translate(165%);
+  .line {
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
 }
 
@@ -167,12 +171,18 @@ i {
   .featured {
     grid-template-columns: repeat(4, 1fr);
   }
-  .cta2 {
-    transform: translate(165%);
-  }
   .logo-container {
     display: flex;
     align-items: left;
     justify-content: left;
+  }
+  .button-view-games {
+    float: right;
+  }
+  .line {
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
 }
