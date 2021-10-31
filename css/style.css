@@ -9,7 +9,7 @@ body {
   margin: 0px;
 }
 
-.boldtext,
+.bold-text,
 .cta {
   font-family: "roboto-bold";
 }
@@ -19,6 +19,22 @@ body {
 .gamehub-logo {
   margin-bottom: 30px;
   height: 160px;
+}
+
+.orange {
+  color: #f7710e;
+}
+
+.sale {
+  text-decoration: line-through;
+}
+
+.push-left {
+  float: left;
+}
+
+.push-right {
+  float: right;
 }
 
 .action-icon {
@@ -38,11 +54,6 @@ nav li {
   padding: 25px 20px;
 }
 
-.search-bar {
-  height: 40px;
-  float: left;
-}
-
 #hamburger-menu {
   display: none;
   float: left;
@@ -56,7 +67,7 @@ nav li {
   display: block;
 }
 
-.headermenu {
+.header-menu {
   background-color: #202441;
   height: 60px;
   padding-top: 10px;
@@ -69,7 +80,7 @@ a {
 
 .home-site {
   font-family: "roboto-bold";
-  font-size: 20px;
+  text-decoration: underline;
 }
 
 /*games sections*/
@@ -99,7 +110,7 @@ a {
   margin-top: 20px;
 }
 
-.textspace {
+.text-space {
   line-height: 0px;
 }
 
@@ -119,7 +130,7 @@ a {
   width: 100%;
 }
 
-.section__space {
+.section-space {
   margin-top: 80px;
 }
 
@@ -142,6 +153,12 @@ i {
 
 .logo-container {
   margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,8 +193,9 @@ i {
     align-items: left;
     justify-content: left;
   }
-  .button-view-games {
-    float: right;
+  .button-container {
+    align-items: right;
+    justify-content: right;
   }
   .line {
     height: 1px;
