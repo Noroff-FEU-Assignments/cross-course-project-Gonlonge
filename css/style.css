@@ -4,14 +4,27 @@ h1 {
   font-family: "Play", sans-serif, serif;
 }
 
+h2 {
+  font-family: "Play", sans-serif, serif;
+}
+
 body {
-  font-family: "roboto";
+  font-family: "roboto", sans-serif, serif;
   margin: 0px;
 }
 
 .bold-text,
 .cta {
-  font-family: "roboto-bold";
+  font-family: "roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.check-text {
+  font-family: "Stick No Bills", "Times New Roman", serif, sans-serif;
+}
+
+.cover-gap {
+  display: gap;
+  grid-gap: 100px;
 }
 
 /*header seachmenu*/
@@ -83,7 +96,7 @@ a {
   text-decoration: underline;
 }
 
-/*games sections*/
+/*buttons*/
 
 .cta {
   background-color: #202441;
@@ -109,6 +122,78 @@ a {
   max-width: 210px;
   margin-top: 20px;
 }
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: #202441;
+  color: #f7710e;
+  font-size: 1em;
+  text-transform: uppercase;
+  max-width: 210px;
+  border-width: 0;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.link-button-reverse {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  border: 2px solid #f7710e;
+  color: #202441;
+  font-size: 1em;
+  text-transform: uppercase;
+  max-width: 210px;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.order-button {
+  display: block;
+  text-align: center;
+  margin: none;
+  background-color: #202441;
+  color: #f7710e;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: max-content;
+  border-width: 0;
+  padding: 8px;
+  border-radius: 40px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.link-button-reverse:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+}
+
+.order-button:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+}
+
+.back-button-row {
+  display: flex;
+}
+
+.link-button:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+}
+
+/*games sections*/
 
 .text-space {
   line-height: 0px;
@@ -158,10 +243,112 @@ i {
   justify-content: center;
 }
 
-.button-container {
+/*buy games page*/
+
+.cart-price {
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.left-space {
+  margin-left: 24px;
+}
+
+/*check out page*/
+
+.check-out-menu {
+  margin-top: 12px;
+  color: #ffffff;
+}
+
+.payment-space {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.cover-items {
+  border: 2px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/*view all games*/
+
+.enlarge-button {
+  display: block;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #f7710e;
+  color: #202441;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 8px;
+  border-radius: 40px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*sign in*/
+
+.sign-in-bar {
+  border: 2px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 5px 23px;
+}
+
+.sign-in-bar {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password {
+  color: #f7710e;
+  text-align: center;
+  font-size: 13px;
+}
+
+.dont-account {
+  color: black;
+  text-align: center;
+  font-size: 13px;
+}
+
+/*my profile*/
+
+.center-container {
+  max-width: 200px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.top-space {
+  margin-top: 30px;
+}
+
+.high-top-space {
+  margin-top: 60px;
+}
+
+.item-two-column-tablet {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+/*contact page*/
+
+textarea {
+  border: 2px solid #e2e2e2;
+  border-radius: 3px;
+  margin: 20px 0px;
+  padding: 40px 8px;
+}
+
+/*order complete*/
+
+.text-center {
+  text-align: center;
 }
 
 /*sceen devices*/
@@ -169,6 +356,9 @@ i {
 @media (min-width: 400px) {
   .featured {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .picture-wrapper {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -188,6 +378,7 @@ i {
   .featured {
     grid-template-columns: repeat(4, 1fr);
   }
+
   .logo-container {
     display: flex;
     align-items: left;
@@ -202,5 +393,9 @@ i {
     background-color: rgb(231, 231, 231);
     margin-top: 90px;
     margin-bottom: 90px;
+  }
+  .item-two-column-tablet {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }
