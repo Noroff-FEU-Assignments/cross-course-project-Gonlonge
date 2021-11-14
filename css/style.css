@@ -121,6 +121,7 @@ a {
   color: #202441;
   max-width: 210px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .button-container {
@@ -295,11 +296,8 @@ i {
 .sign-in-bar {
   border: 2px solid #e2e2e2;
   border-radius: 3px;
-  padding: 5px 23px;
-}
-
-.sign-in-bar {
-  text-align: center;
+  padding: 10px 12px;
+  text-align: left;
   margin-top: 15px;
 }
 
@@ -318,9 +316,17 @@ i {
 /*my profile*/
 
 .center-container {
-  max-width: 200px;
+  max-width: 180px;
   margin: 0px auto;
   padding: 0px 20px;
+}
+
+.center-container textarea {
+  vertical-align: top;
+  border: 2px solid #e2e2e2;
+  border-radius: 3px;
+  margin: 20px 0px;
+  padding: 10px 8px;
 }
 
 .top-space {
@@ -329,15 +335,6 @@ i {
 
 .high-top-space {
   margin-top: 60px;
-}
-
-/*contact page*/
-
-textarea {
-  border: 2px solid #e2e2e2;
-  border-radius: 3px;
-  margin: 20px 0px;
-  padding: 40px 8px;
 }
 
 /*order complete*/
