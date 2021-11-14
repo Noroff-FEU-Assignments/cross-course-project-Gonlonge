@@ -1,0 +1,397 @@
+/*fonts*/
+
+h1 {
+  font-family: "Play", sans-serif, serif;
+}
+
+h2 {
+  font-family: "Play", sans-serif, serif;
+}
+
+body {
+  font-family: "roboto", sans-serif, serif;
+  margin: 0px;
+}
+
+.bold-text,
+.cta {
+  font-family: "roboto-bold", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.check-text {
+  font-family: "Stick No Bills", "Times New Roman", serif, sans-serif;
+}
+
+.cover-gap {
+  display: gap;
+  grid-gap: 100px;
+}
+
+/*header seachmenu*/
+
+.gamehub-logo {
+  margin-bottom: 30px;
+  height: 160px;
+}
+
+.orange {
+  color: #f7710e;
+}
+
+.sale {
+  text-decoration: line-through;
+}
+
+.push-left {
+  float: left;
+}
+
+.push-right {
+  float: right;
+}
+
+.action-icon {
+  float: right;
+  margin-left: 25px;
+}
+
+nav {
+  display: none;
+  position: fixed;
+  background: #202441;
+  z-index: 1000;
+}
+
+nav li {
+  display: block;
+  padding: 25px 20px;
+}
+
+#hamburger-menu {
+  display: none;
+  float: left;
+}
+
+.hamburger-label {
+  float: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+.header-menu {
+  background-color: #202441;
+  height: 60px;
+  padding-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #f7710e;
+}
+
+.home-site {
+  font-family: "roboto-bold";
+  text-decoration: underline;
+}
+
+/*buttons*/
+
+.cta {
+  background-color: #202441;
+  color: #f7710e;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: 100%;
+  border-width: 0;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.cta:hover {
+  transition-duration: 0.3s;
+  cursor: pointer;
+  background-color: #32366582;
+}
+
+.button-view-games {
+  background-color: white;
+  border: 2px solid #f7710e;
+  color: #202441;
+  max-width: 210px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-button {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: #202441;
+  color: #f7710e;
+  font-size: 1em;
+  text-transform: uppercase;
+  max-width: 210px;
+  border-width: 0;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.link-button-reverse {
+  display: block;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  border: 2px solid #f7710e;
+  color: #202441;
+  font-size: 1em;
+  text-transform: uppercase;
+  max-width: 210px;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.order-button {
+  display: block;
+  text-align: center;
+  margin: none;
+  background-color: #202441;
+  color: #f7710e;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: max-content;
+  border-width: 0;
+  padding: 8px;
+  border-radius: 40px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.link-button-reverse:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+}
+
+.order-button:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+}
+
+.back-button-row {
+  display: flex;
+}
+
+.link-button:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+}
+
+/*games sections*/
+
+.text-space {
+  line-height: 0px;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px;
+}
+
+.featured img {
+  width: 100%;
+}
+
+.section-space {
+  margin-top: 80px;
+}
+
+footer {
+  background-color: #202441;
+  width: auto;
+  height: 120px;
+  margin-top: 100px;
+}
+
+.footer-logo {
+  float: right;
+  margin-left: 25px;
+  margin-top: 35px;
+}
+
+i {
+  color: white;
+}
+
+.logo-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*buy games page*/
+
+.cart-price {
+  display: flex;
+  justify-content: center;
+}
+
+.left-space {
+  margin-left: 24px;
+}
+
+/*check out page*/
+
+.check-out-menu {
+  margin-top: 12px;
+  color: #ffffff;
+}
+
+.payment-space {
+  margin-top: 70px;
+  margin-bottom: 20px;
+}
+
+.cover-items {
+  border: 2px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/*view all games*/
+
+.enlarge-button {
+  display: block;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #f7710e;
+  color: #202441;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 8px;
+  border-radius: 40px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*sign in*/
+
+.sign-in-bar {
+  border: 2px solid #e2e2e2;
+  border-radius: 3px;
+  padding: 10px 12px;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.forgot-password {
+  color: #f7710e;
+  text-align: center;
+  font-size: 13px;
+}
+
+.dont-account {
+  color: black;
+  text-align: center;
+  font-size: 13px;
+}
+
+/*my profile*/
+
+.center-container {
+  max-width: 180px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
+
+.center-container textarea {
+  vertical-align: top;
+  border: 2px solid #e2e2e2;
+  border-radius: 3px;
+  margin: 20px 0px;
+  padding: 10px 8px;
+}
+
+.top-space {
+  margin-top: 30px;
+}
+
+.high-top-space {
+  margin-top: 60px;
+}
+
+/*order complete*/
+
+.text-center {
+  text-align: center;
+}
+
+/*sceen devices*/
+
+@media (min-width: 400px) {
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .picture-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .featured {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .line {
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .item-two-column-tablet {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
+
+@media (min-width: 800px) {
+  .featured {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
+  .button-container {
+    align-items: right;
+    justify-content: right;
+  }
+  .line {
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .item-two-column-tablet {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+}
