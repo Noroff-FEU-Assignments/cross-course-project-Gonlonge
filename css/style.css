@@ -331,11 +331,6 @@ i {
   margin-top: 60px;
 }
 
-.item-two-column-tablet {
-  grid-column-start: 2;
-  grid-column-end: 4;
-}
-
 /*contact page*/
 
 textarea {
@@ -371,6 +366,10 @@ textarea {
     background-color: rgb(231, 231, 231);
     margin-top: 90px;
     margin-bottom: 90px;
+  }
+  .item-two-column-tablet {
+    grid-column-start: 2;
+    grid-column-end: 4;
   }
 }
 
