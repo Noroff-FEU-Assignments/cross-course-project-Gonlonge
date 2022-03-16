@@ -343,6 +343,16 @@ i {
   text-align: center;
 }
 
+/* JS add to cart*/
+
+* {
+  box-sizing: border-box;
+}
+
+.modal-container {
+  display: none;
+}
+
 /*sceen devices*/
 
 @media (min-width: 400px) {
@@ -394,4 +404,43 @@ i {
     grid-column-start: 2;
     grid-column-end: 4;
   }
+}
+
+/* adjustments for contact page for content management*/
+
+.link-button-2 {
+  display: block;
+  text-align: center;
+  background-color: #202441;
+  color: #f7710e;
+  font-size: 1em;
+  text-transform: uppercase;
+  max-width: 210px;
+  border-width: 0;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.link-button-reverse-2 {
+  display: block;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #f7710e;
+  color: #202441;
+  font-size: 1em;
+  text-transform: uppercase;
+  max-width: 210px;
+  padding: 8px;
+  border-radius: 40px;
+}
+
+.subject-area {
+  padding: 60px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
 }

@@ -23,22 +23,7 @@
       src="https://kit.fontawesome.com/b318972c4d.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Hotjar Tracking Code for https://dreamy-hypatia-edc008.netlify.app/ -->
-    <script>
-      (function (h, o, t, j, a, r) {
-        h.hj =
-          h.hj ||
-          function () {
-            (h.hj.q = h.hj.q || []).push(arguments);
-          };
-        h._hjSettings = {hjid: 2858090, hjsv: 6};
-        a = o.getElementsByTagName("head")[0];
-        r = o.createElement("script");
-        r.async = 1;
-        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-        a.appendChild(r);
-      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
-    </script>
+
   </head>
   <body>
     <div class="main-container">
@@ -78,19 +63,61 @@
         <img src="images/go-back-blue.jpg" alt="go back button" />
       </a>
     </div>
-    <div class="center-container">
-      <h1>Contact us</h1>
+<form id=contactForm>
+    <div class="main-container">
+      <h2>Contact us</h2>
+      <p>First name</p>
       <div class="top-space">
-        <div>
-          <label for="send-message"></label>
-          <textarea id="send-message" name="send-message"></textarea>
+        
+          <label>
+            <input name="firstName" id="firstName" />
+          </label>
+          <div class="form-error " id="firstNameError">
+          <p> error </p> 
+       
+
         </div>
-        <a href="../myprofile.html" class="link-button bold-text">Send</a>
+        <p>last name</p>
+        <div class="top-space">
+          
+            <label>
+              <input name="lastName" id="lastName" />
+            </label>
+         
+            <div class="form-error " id="lastNameError">
+            <p> error </p> 
+         
+  
+          </div>
+          <p>Email</p>
+          <div class="top-space">
+            
+              <label>
+                <input name="email" id="email" />
+              </label>
+              <div class="form-error " id="emailError">
+              <p> error </p> 
+              </div>
+            <div>
+         </div>
+         <div class="top-space">
+          <p>Subject</p>
+           <label>
+              <input class="subject-area" id="subject" />
+            </label>
+              <div class="form-error">
+            
+            <p> error </p> 
+          </div>
+            </div>
+            <button class="link-button-2 bold-text top-space">Submit</button>
+           
+            
       </div>
     </div>
-
+  </form>
     <div class="section-space">
-      <div class="center-container">
+      <div class="main-container">
         <h1>FAQ</h1>
         <p class="bold-text">Frequently Asked Questions</p>
         <p>
@@ -98,7 +125,7 @@
           of withdrawal
         </p>
         <div class="top-space">
-          <a href="../myprofile.html" class="link-button-reverse bold-text"
+          <a href="../myprofile.html" class="link-button-reverse-2 bold-text"
             >View more</a
           >
         </div>
@@ -110,5 +137,6 @@
         <i class="fab fa-facebook fa-3x footer-logo"></i>
       </div>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
