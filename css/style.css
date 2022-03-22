@@ -35,7 +35,7 @@ body {
 }
 
 .orange {
-  color: #f7710e;
+  color: #ff984f;
 }
 
 .sale {
@@ -52,7 +52,7 @@ body {
 
 .action-icon {
   float: right;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 nav {
@@ -82,8 +82,8 @@ nav li {
 
 .header-menu {
   background-color: #202441;
-  height: 60px;
-  padding-top: 10px;
+  height: 70px;
+  padding-top: 12px;
 }
 
 a {
@@ -92,7 +92,7 @@ a {
 }
 
 .home-site {
-  font-family: "roboto-bold";
+  font-family: "roboto";
   text-decoration: underline;
 }
 
@@ -100,28 +100,32 @@ a {
 
 .cta {
   background-color: #202441;
-  color: #f7710e;
+  color: #ff984f;
   font-size: 1em;
   text-transform: uppercase;
   width: 100%;
   border-width: 0;
   padding: 8px;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .cta:hover {
   transition-duration: 0.3s;
   cursor: pointer;
   background-color: #32366582;
+  transition-duration: 0.3s;
+  transform: translateY(-1.5px);
 }
 
 .button-view-games {
   background-color: white;
-  border: 2px solid #f7710e;
+  border: 2px solid #ff984f;
   color: #202441;
   max-width: 210px;
   margin-top: 20px;
   text-align: center;
+  cursor: pointer;
 }
 
 .button-container {
@@ -135,13 +139,14 @@ a {
   text-align: center;
   margin: auto;
   background-color: #202441;
-  color: #f7710e;
+  color: #ff984f;
   font-size: 1em;
   text-transform: uppercase;
   max-width: 210px;
   border-width: 0;
   padding: 8px;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .link-button-reverse {
@@ -149,13 +154,14 @@ a {
   text-align: center;
   margin: auto;
   background-color: white;
-  border: 2px solid #f7710e;
+  border: 2px solid #ff984f;
   color: #202441;
   font-size: 1em;
   text-transform: uppercase;
   max-width: 210px;
   padding: 8px;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .order-button {
@@ -163,7 +169,7 @@ a {
   text-align: center;
   margin: none;
   background-color: #202441;
-  color: #f7710e;
+  color: #ff984f;
   font-size: 1em;
   text-transform: uppercase;
   width: max-content;
@@ -173,25 +179,35 @@ a {
   margin-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  cursor: pointer;
 }
 
 .link-button-reverse:hover {
   transition-duration: 0.3s;
   background-color: #32366582;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transform: translateY(-1.5px);
 }
 
 .order-button:hover {
   transition-duration: 0.3s;
   background-color: #32366582;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transform: translateY(-1.5px);
 }
 
 .back-button-row {
   display: flex;
+  cursor: pointer;
 }
 
 .link-button:hover {
   transition-duration: 0.3s;
   background-color: #32366582;
+  cursor: pointer;
+  transform: translateY(-1.5px);
 }
 
 /*games sections*/
@@ -279,7 +295,7 @@ i {
   display: block;
   text-align: center;
   background-color: white;
-  border: 2px solid #f7710e;
+  border: 2px solid #ff984f;
   color: #202441;
   font-size: 1em;
   text-transform: uppercase;
@@ -406,13 +422,31 @@ i {
   }
 }
 
-/* adjustments for contact page for content management*/
+.topnav {
+  margin-top: 18px;
+  text-align: center;
+  margin-left: 150px;
+}
+
+.space-desktop {
+  margin-right: 30px;
+}
+
+.header-menu {
+  padding-bottom: 70px;
+}
+
+.text-color {
+  color: white;
+}
+
+/* adjustments for contact page for content management JS course*/
 
 .link-button-2 {
   display: block;
   text-align: center;
   background-color: #202441;
-  color: #f7710e;
+  color: #ff984f;
   font-size: 1em;
   text-transform: uppercase;
   max-width: 210px;
@@ -425,7 +459,7 @@ i {
   display: block;
   text-align: center;
   background-color: white;
-  border: 2px solid #f7710e;
+  border: 2px solid #ff984f;
   color: #202441;
   font-size: 1em;
   text-transform: uppercase;
@@ -443,4 +477,57 @@ i {
   color: red;
   font-size: 0.9rem;
   margin-top: 2px;
+}
+
+/*shopping cart*/
+.cart-counter {
+  height: 25px;
+  width: 25px;
+  background-color: #ff984f;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  display: none;
+  margin-left: 30px;
+  position: relative;
+  bottom: 70px;
+  left: 10px;
+}
+
+.contact-button-js {
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.contact-button-js:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transform: translateY(-1.5px);
+}
+
+/*contact js*/
+
+.message {
+  background: rgb(12, 95, 46);
+  padding: 10px;
+  color: white;
+  border-radius: 40px;
+  margin: 20px 0px 40px 0px;
+}
+@media (max-width: 800px) {
+  .header-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .header-mobile {
+    display: none;
+  }
 }
