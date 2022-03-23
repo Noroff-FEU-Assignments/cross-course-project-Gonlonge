@@ -125,12 +125,42 @@
         <h1>Most Popular Games</h1>
       </div>
       <div class="featured">
+
+
+
         <div class="column">
+
+
+          <button class="mybtn-color" id="myBtn">
           <img src="images/cover1.jpg" alt="game covers" />
+        
+        </button>
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+<div class="modal-content main-container  ">
+  <span class="close">&times;</span>
+  <h2>Metroid Dread</h2>
+  <div class="modal-cover">
+  <img src="images/cover1.jpg" alt="game covers" />
+  </div >
+  <p id="gameInfo"></p>
+  <a onclick="addToCart(this)" class="link-button"> Buy </a>
+
+</div>
+
+</div>
+
+
+
           <p class="text-space">Game Title</p>
           <p class="bold-text">50€</p>
           <a onclick="addToCart(this)" class="link-button"> Buy </a>
         </div>
+
+
+
         <div class="column">
           <img src="images/cover2.jpg" alt="game covers" />
           <p class="text-space">Game Title</p>
@@ -153,7 +183,7 @@
 
       <div class="button-container top-space">
         <a class="cta button-view-games" href="viewallgames.html">
-          View Games
+          View all Games
         </a>
       </div>
       <div class="section-space">
@@ -204,7 +234,7 @@
 
         <div class="button-container top-space">
           <a class="cta button-view-games" href="viewallgames.html">
-            View Games
+            View all Games
           </a>
         </div>
         <div class="section-space">
@@ -238,7 +268,7 @@
           </div>
           <div class="button-container top-space">
             <a class="cta button-view-games" href="viewallgames.html">
-              View Games
+              View all Games
             </a>
           </div>
         </div>
@@ -249,7 +279,9 @@
         <i class="fab fa-instagram-square fa-3x footer-logo"></i>
         <i class="fab fa-facebook fa-3x footer-logo"></i>
       </div>
+      
     </footer>
     <script src="js/cart.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
