@@ -40,7 +40,7 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
   </head>
-
+  <script src="js/checkout.js" async></script>
   <body>
     <div class="main-container">
       <header class="logo-container">
@@ -55,63 +55,192 @@
       </div>
       <h2 class="check-out-menu main-container">Check Out</h2>
     </div>
-    <div>
-      <div class="section-space main-container">
-        <a href="buy.html">
-          <img src="images/go-back-blue.jpg" alt="go back button" />
-        </a>
-      </div>
-      <div class="featured main-container top-space">
-        <img src="images/cover1.jpg" alt="game covers" />
-        <div>
-          <p>Assansin</p>
-          <form method="POST"></form>
-          <input type="number" class="cover-items" />
-          <p class="bold-text">50€</p>
+    <section class="main-container section-space">
+  
+   
+      <div class="cart-items featured">
+          <div class="cart-row">
+              <div class="cart-item ">
+                  <img class="cart-item-image" src="Images/cover1.jpg" >
+                  <h3 class="cart-item-title">Fortnite Black</h3>
+              </div>
+              <p class="cart-pricer">$50</p>
+              <div class="cart-quantity">
+                <div>
+                  <input class="cart-quantity-input" type="number" value="1">
+                  </div>
+                  <button class="card-cart-btn top-space btn-danger cross-btn" type="button">Cancel</button>
+              </div>
+          </div>
+          <div class="cart-row">
+            <div class="cart-item ">
+                <img class="cart-item-image" src="Images/cover2.jpg" >
+                <h3 class="cart-item-title">Apex Furious</h3>
+            </div>
+            <p class="cart-pricer">$50</p>
+            <div class="cart-quantity">
+              <div>
+                <input class="cart-quantity-input" type="number" value="1">
+                </div>
+                <button class="card-cart-btn top-space btn-danger cross-btn" type="button">Cancel</button>
+            </div>
         </div>
       </div>
+      <div class="cart-total">
+          <p class="top-space">Total</p>
+          <p class="cart-total-price">$75</p>
+      </div>
+      
+  </section>
     </div>
+   <div class="line-to top-space main-container"></div>
+    <div>
+      <p class="main-container top-space">Select Payment</p>
+      
+</div>
+<div class="main-container featured top-space">
+  <button onclick="myFunction()" id="myBtn" class="card-btn">
+  <div class="my-icons ">
+<img src="images/mastercard.png" alt="mastercard" class="space-icon">
+<img src="images/visacard.png" alt="visacard" class="space-icon">
+<img src="images/paypal.png" alt="paypal" class="space-icon">
+<img src="images/vipps.png" alt="Vipps" class="space-icon">
+</button>
+</div>
+</div>
+<span id="dots"></span>
+<div id="more">
+<div class="main-container">
+  
+<h2>Your details</h2>
+<div class="input-space">
+  <label for="fname"></label>
+  <input
+    class="field-style"
+    type="text"
+    id="fname"
+    name="firstname"
+    placeholder="Name"
+  />
+</div>
+<div class="input-space">
+  <label for="lname"> </label>
+  <input
+    class="field-style"
+    type="text"
+    id="lname"
+    name="lastname"
+    placeholder="Last name"
+  />
+</div>
+<div class="input-space">
+  <label for="email"></label>
+  <input
+    class="field-style"
+    type="text"
+    id="email"
+    name="email"
+    placeholder="email"
+  />
+</div>
+<div class="input-space">
+  <label for="postcode"></label>
+  <input
+    class="field-style"
+    type="text"
+    id="postcode"
+    name="postcode"
+    placeholder="postcode"
+  />
+</div>
+<div class="input-space">
+  <label for="city"></label>
+  <input
+    class="field-style"
+    type="text"
+    id="city"
+    name="city"
+    placeholder="City"
+  />
+</div>
+<div class="input-space">
+  <label for="address"></label>
+  <input
+    class="field-style"
+    type="text"
+    id="address"
+    name="address"
+    placeholder="address"
+  />
+</div>
+</div>
+</section>
+<section class="main-container">
+<div>
+<h2>Payment details</h2>
+<div class="input-space">
+  <input
+    class="field-style"
+    type="text"
+    id="cname"
+    name="cardname"
+    placeholder="Card owner name"
+  />
+</div>
+<div class="input-space">
+  <input
+    class="field-style"
+    type="text"
+    id="cardnumber"
+    name="cardnumber"
+    placeholder="0000-0000-0000-0000"
+  />
+</div>
+<div class="input-space">
+  <input
+    class="field-style"
+    type="text"
+    id="date"
+    name="expire month day year"
+    placeholder="MM / DD / YYYY"
+  />
+</div>
+<div class="input-space">
+  <input
+    class="field-style"
+    type="text"
+    id="cvv"
+    name="cvv"
+    placeholder="000"
+  />
+</span>
+</div>
+</div>
+</section>
+<div class="main-container top-space">
+<div>
+<input type="checkbox" id="checkbox" name="checkbox" value="check" />
+<label for="checkbox"> </label>
+</div>
+<span class="checkbox-style"
+  >I confirm I have read and agree to the terms & conditions</span
+>
+</div>
+</div> 
 
-    <div>
-      <div class="featured main-container section-space">
-        <img src="images/cover5.jpg" alt="game covers" />
-        <div>
-          <p>Cyberpunk</p>
-          <form method="POST"></form>
-          <input type="number" class="cover-items" />
-          <p class="bold-text">50€</p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <p class="main-container payment-space">Select Payment</p>
-      <div>
-        <div class="main-container">
-          <a href="checkout.html" class="order-button bold-text">Visa</a>
-        </div>
-        <div class="main-container">
-          <a href="checkout.html" class="order-button bold-text">Mastercard</a>
-        </div>
-        <div class="main-container">
-          <a href="checkout.html" class="order-button bold-text">Vipps</a>
-        </div>
-      </div>
-      <p class="main-container featured payment-space">Account</p>
-    </div>
-    <div class="main-container">
-      <a href="signin.html" class="order-button bold-text">Sign In</a>
-    </div>
-    <p class="main-container featured payment-space">Total price 100€</p>
-    <div class="main-container">
-      <a href="ordercomplete.html" class="order-button bold-text"
-        >Complete order</a
-      >
-    </div>
+    <div class="main-container high-top-space">
+      <a href="ordercomplete.html" class="cta button-view-games"
+      >Complete order</a>
+</div>
+</div>
     <footer>
       <div class="main-container">
         <i class="fab fa-instagram-square fa-3x footer-logo"></i>
         <i class="fab fa-facebook fa-3x footer-logo"></i>
       </div>
     </footer>
+
   </body>
 </html>
+
+

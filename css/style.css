@@ -95,6 +95,23 @@ a {
   font-family: "roboto";
   text-decoration: underline;
 }
+/* cart */
+
+.cart-counter {
+  height: 25px;
+  width: 25px;
+  background-color: #ff984f;
+  border-radius: 50%;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  display: none;
+  margin-left: 30px;
+  position: relative;
+  bottom: 70px;
+  left: 10px;
+}
 
 /*buttons*/
 
@@ -126,6 +143,11 @@ a {
   margin-top: 20px;
   text-align: center;
   cursor: pointer;
+}
+
+.button-view-games:hover {
+  transition-duration: 0.3s;
+  transform: translateY(-6px);
 }
 
 .button-container {
@@ -357,6 +379,16 @@ i {
   text-align: center;
 }
 
+.my-icons {
+  display: flex;
+  width: 35px;
+  height: 35px;
+}
+
+.space-icon {
+  margin-right: 10px;
+}
+
 /* JS add to cart*/
 
 * {
@@ -366,6 +398,44 @@ i {
 .modal-container {
   display: none;
   gap: 50px;
+}
+
+/* inputs how many*/
+.cart-quantity-input {
+  height: 30px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #f7710e;
+  background-color: rgb(255, 246, 246);
+  color: rgb(0, 0, 0);
+  padding: 0;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* input style */
+
+.input-space {
+  margin-bottom: 20px;
+}
+.field-style {
+  padding: 7px 15px;
+  display: inline-block;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  transition: 0.1s;
+  outline: none;
+  cursor: pointer;
+}
+
+.field-style:focus {
+  border: 2px solid #dadada;
+}
+
+.checkbox-style {
+  margin: 0px 0px 0px 0px;
+  font-size: 13px;
 }
 
 /*sceen devices*/
@@ -415,9 +485,31 @@ i {
     margin-top: 90px;
     margin-bottom: 90px;
   }
+
+  .line-to {
+    height: 1px;
+    background-color: rgb(231, 231, 231);
+  }
+
   .item-two-column-tablet {
     grid-column-start: 2;
     grid-column-end: 4;
+  }
+
+  .cart-counter {
+    height: 25px;
+    width: 25px;
+    background-color: #ff984f;
+    border-radius: 50%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+    margin-left: 30px;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
   }
 }
 
@@ -467,6 +559,7 @@ i {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
+  border-radius: 20px;
 }
 
 /* The Close Button */
@@ -500,6 +593,47 @@ i {
   max-width: 30%;
 }
 
+#more {
+  display: none;
+}
+
+.card-cart-btn {
+  height: 30px;
+  width: 50px;
+
+  display: inline-block;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.card-cart-btn:hover {
+  transition-duration: 0.3s;
+  background-color: #32366582;
+  cursor: pointer;
+}
+
+.card-btn {
+  padding-left: 16px;
+
+  border-radius: 50px;
+  border: 1px solid #dbdbdb;
+  background-color: white;
+  cursor: pointer;
+}
+
+.card-btn:hover {
+  transition-duration: 0.3s;
+  transform: translateY(-3px);
+  background-color: #32366582;
+  cursor: pointer;
+}
+
 /* adjustments for contact page for content management JS course*/
 
 .link-button-2 {
@@ -513,6 +647,7 @@ i {
   border-width: 0;
   padding: 8px;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .link-button-reverse-2 {
@@ -526,6 +661,7 @@ i {
   max-width: 210px;
   padding: 8px;
   border-radius: 40px;
+  cursor: pointer;
 }
 
 .subject-area {
@@ -569,6 +705,17 @@ i {
   cursor: pointer;
   transition-duration: 0.3s;
   transform: translateY(-1.5px);
+  cursor: pointer;
+}
+
+.cross-btn {
+  cursor: pointer;
+  transform: translate(0%, -50%);
+}
+
+.close:hover {
+  background: rgb(177, 175, 175);
+  cursor: pointer;
 }
 
 /*contact js*/
