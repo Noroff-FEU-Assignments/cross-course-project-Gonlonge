@@ -122,209 +122,148 @@
 
 <div class="main-container featured top-space">
   <button onclick="myFunction()" id="myBtn" class="card-btn">
-  <div class="my-icons ">
-<img src="images/mastercard.png" alt="mastercard" class="space-icon">
-<img src="images/visacard.png" alt="visacard" class="space-icon">
-<img src="images/paypal.png" alt="paypal" class="space-icon">
-<img src="images/vipps.png" alt="Vipps" class="space-icon">
-</button>
+    <div class="my-icons ">
+      <img src="images/mastercard.png" alt="mastercard" class="space-icon">
+      <img src="images/visacard.png" alt="visacard" class="space-icon">
+      <img src="images/paypal.png" alt="paypal" class="space-icon">
+      <img src="images/vipps.png" alt="Vipps" class="space-icon">
+  </button>
 </div>
 </div>
 <span id="dots"></span>
 <div id="more">
-<div class="main-container">
-  <form id="contactForm">
-<h2>Your details</h2>
-<div class="input-space">
-  <label for="fname">  </label>
-  <input
-    class="field-style"
-    type="text"
-    id="fname"
-    name="firstname"
-    placeholder="Name"
-  />
-</div>
-  <div class="form-error" id="fnameError">
+  <div class="main-container">
+    <form id="contactForm">
+      <h2>Your details</h2>
+      <div class="input-space">
+        <label for="fname"> </label>
+        <input class="field-style" type="text" id="fname" name="firstname" placeholder="Name" />
+      </div>
+      <div class="form-error" id="fnameError">
+        <p>Your last name must be at least 2 characters long</p>
+      </div>
+
+      <div class="input-space">
+        <label for="lname"> </label>
+        <input class="field-style" type="text" id="lname" name="lastname" placeholder="Last name" />
+      </div>
+
+      <div class="form-error" id="lNameError">
+        <p>Your last name must be at least 2 characters long</p>
+      </div>
+
+      <div class="input-space">
+        <label for="email"></label>
+        <input class="field-style" type="text" id="email" name="email" placeholder="email" />
+      </div>
+
+      <div class="form-error" id="emailError">
+        <p>Your last name must be at least 2 characters long</p>
+      </div>
+
+      <div class="input-space">
+        <label for="postcode"></label>
+        <input class="field-style" type="text" id="postCode" name="postcode" placeholder="postode" />
+      </div>
+
+      <div class="form-error" id="postCodeError">
+        <p>Your last name must be at least 2 characters long</p>
+      </div>
+
+      <div class="input-space">
+        <label for="city"></label>
+        <input class="field-style" type="text" id="city" name="city" placeholder="City" />
+      </div>
+
+      <div class="form-error" id="lastNameError">
+        <p>Your last name must be at least 2 characters long</p>
+      </div>
+
+      <div class="input-space">
+        <label for="address"></label>
+        <input class="field-style" type="text" id="address" name="address" placeholder="address" />
+      </div>
+
+      <div class="form-error" id="addressError">
+        <p>Your last name must be at least 2 characters long</p>
+      </div>
+
+      </section>
+
+      <div>
+
+        <h2>Payment details</h2>
+        <div class="input-space">
+          <input class="field-style" type="text" id="cardName" name="cardName" placeholder="Card owner name" />
+        </div>
+
+        <div class="form-error" id="cardNameError">
           <p>Your last name must be at least 2 characters long</p>
         </div>
 
-<div class="input-space">
-  <label for="lname"> </label>
-  <input
-    class="field-style"
-    type="text"
-    id="lname"
-    name="lastname"
-    placeholder="Last name"
-  />
-</div>
+        <div class="input-space">
+          <input class="field-style" type="text" id="cardNumber" name="cardNumber"
+            placeholder="0000-0000-0000-0000" />
+        </div>
 
-<div class="form-error" id="lNameError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
+        <div class="form-error" id="cartNumberError">
+          <p>Your last name must be at least 2 characters long</p>
+        </div>
 
-<div class="input-space">
-  <label for="email"></label>
-  <input
-    class="field-style"
-    type="text"
-    id="email"
-    name="email"
-    placeholder="email"
-  />
-</div>
+        <div class="input-space">
+          <input class="field-style" type="text" id="date" name="expire month day year"
+            placeholder="MM / DD / YYYY" />
+        </div>
 
-<div class="form-error" id="emailError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
+        <div class="form-error" id="dateError">
+          <p>Your last name must be at least 2 characters long</p>
+        </div>
 
-<div class="input-space">
-  <label for="postcode"></label>
-  <input
-    class="field-style"
-    type="text"
-    id="postCode"
-    name="postcode"
-    placeholder="postode"
-  />
-</div>
+        <div class="input-space">
 
-<div class="form-error" id="postCodeError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
+          <input class="field-style" type="text" id="cvv" name="cvv" placeholder="000" />
+          </span>
+        </div>
 
-<div class="input-space">
-  <label for="city"></label>
-  <input
-    class="field-style"
-    type="text"
-    id="city"
-    name="city"
-    placeholder="City"
-  />
-</div>
+        <div class="form-error" id="cvvError">
+          <p>Your last name must be at least 2 characters long</p>
+        </div>
 
-<div class="form-error" id="lastNameError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
-
-<div class="input-space">
-  <label for="address"></label>
-  <input
-    class="field-style"
-    type="text"
-    id="address"
-    name="address"
-    placeholder="address"
-  />
-</div>
-
-<div class="form-error" id="addressError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
-
-</section>
-
-<div>
-  
-<h2>Payment details</h2>
-<div class="input-space">
-  <input
-    class="field-style"
-    type="text"
-    id="cardName"
-    name="cardName"
-    placeholder="Card owner name"
-  />
-</div>
-
-<div class="form-error" id="cardNameError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
-
-<div class="input-space">
-  <input
-    class="field-style"
-    type="text"
-    id="cardNumber"
-    name="cardNumber"
-    placeholder="0000-0000-0000-0000"
-  />
-</div>
-
-<div class="form-error" id="cartNumberError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
-
-<div class="input-space">
-  <input
-    class="field-style"
-    type="text"
-    id="date"
-    name="expire month day year"
-    placeholder="MM / DD / YYYY"
-  />
-</div>
-
-<div class="form-error" id="dateError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
-
-<div class="input-space">
-  
-  <input
-    class="field-style"
-    type="text"
-    id="cvv"
-    name="cvv"
-    placeholder="000"
-  />
-</span>
-</div>
-
-<div class="form-error" id="cvvError">
-  <p>Your last name must be at least 2 characters long</p>
-</div>
-
-</div>
-
-<div class="top-space">
-<div>
-<input type="checkbox" id="checkbox" name="checkbox" value="check" />
-<label for="checkbox"> </label>
-</div>
-<span class="checkbox-style"
-  >I confirm I have read and agree to the terms & conditions</span
->
-</div>
-
-
-    <div class="main-container high-top-space">
-
-
-
-
-
-      <div id="message"></div>
-      <button class="link-button-2 bold-text top-space contact-button-js">
-        Submit
-      </button>
-    </div>
-  </div> 
-
-</form>
-  </div>
-</div>
-</div>
-    <footer>
-      <div class="main-container">
-        <i class="fab fa-instagram-square fa-3x footer-logo"></i>
-        <i class="fab fa-facebook fa-3x footer-logo"></i>
       </div>
-    </footer> 
-    
-  </body>
+
+      <div class="top-space">
+        <div>
+          <input type="checkbox" id="checkbox" name="checkbox" value="check" />
+          <label for="checkbox"> </label>
+        </div>
+        <span class="checkbox-style">I confirm I have read and agree to the terms & conditions</span>
+      </div>
+
+
+      <div class="main-container high-top-space">
+
+
+
+
+
+        <div id="message"></div>
+        <button class="link-button-2 bold-text top-space contact-button-js">
+          Submit
+        </button>
+      </div>
+  </div>
+
+  </form>
+</div>
+</div>
+</div>
+<footer>
+  <div class="main-container">
+    <i class="fab fa-instagram-square fa-3x footer-logo"></i>
+    <i class="fab fa-facebook fa-3x footer-logo"></i>
+  </div>
+</footer>
+
+</body>
+
 </html>
-
-
