@@ -280,6 +280,8 @@ i {
   justify-content: center;
 }
 
+/* test */
+
 /*buy games page*/
 
 .cart-price {
@@ -636,6 +638,10 @@ i {
 
 /* adjustments for contact page for content management JS course*/
 
+.contact-font {
+  font-size: 14px;
+}
+
 .link-button-2 {
   display: block;
   text-align: center;
@@ -662,10 +668,6 @@ i {
   padding: 8px;
   border-radius: 40px;
   cursor: pointer;
-}
-
-.subject-area {
-  padding: 60px;
 }
 
 .form-error {

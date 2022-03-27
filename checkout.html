@@ -59,9 +59,24 @@
   
    
       <div class="cart-items featured">
-          <div class="cart-row">
-              <div class="cart-item ">
-                  <img class="cart-item-image" src="Images/cover1.jpg" >
+        <div class="cart-row">
+        <div class="cart-item ">
+        <div class= "myBtn">
+        <img class="cart-item-image" src="Images/cover1.jpg">
+        </div>
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Metroid Dread</h2>
+          <div class="modal-cover ">
+          <img src="images/cover1.jpg" alt="game covers" />
+          </div >
+          <p id="gameInfo"></p>
+          </div>
+        </div>
+        
+        
                   <h3 class="cart-item-title">Fortnite Black</h3>
               </div>
               <p class="cart-pricer">$50</p>
@@ -72,12 +87,17 @@
                   <button class="card-cart-btn top-space btn-danger cross-btn" type="button">Cancel</button>
               </div>
           </div>
+
+
+          
           <div class="cart-row">
-            <div class="cart-item ">
+            <div class="cart-item">
+              <div>
                 <img class="cart-item-image" src="Images/cover2.jpg" >
+              </div>
                 <h3 class="cart-item-title">Apex Furious</h3>
             </div>
-            <p class="cart-pricer">$50</p>
+            <p class="cart-pricer">$25</p>
             <div class="cart-quantity">
               <div>
                 <input class="cart-quantity-input" type="number" value="1">
@@ -95,9 +115,11 @@
     </div>
    <div class="line-to top-space main-container"></div>
     <div>
+
       <p class="main-container top-space">Select Payment</p>
       
 </div>
+
 <div class="main-container featured top-space">
   <button onclick="myFunction()" id="myBtn" class="card-btn">
   <div class="my-icons ">
@@ -111,10 +133,10 @@
 <span id="dots"></span>
 <div id="more">
 <div class="main-container">
-  
+  <form id="contactForm">
 <h2>Your details</h2>
 <div class="input-space">
-  <label for="fname"></label>
+  <label for="fname">  </label>
   <input
     class="field-style"
     type="text"
@@ -123,6 +145,10 @@
     placeholder="Name"
   />
 </div>
+  <div class="form-error" id="fnameError">
+          <p>Your last name must be at least 2 characters long</p>
+        </div>
+
 <div class="input-space">
   <label for="lname"> </label>
   <input
@@ -133,6 +159,11 @@
     placeholder="Last name"
   />
 </div>
+
+<div class="form-error" id="lNameError">
+  <p>Your last name must be at least 2 characters long</p>
+</div>
+
 <div class="input-space">
   <label for="email"></label>
   <input
@@ -143,16 +174,26 @@
     placeholder="email"
   />
 </div>
+
+<div class="form-error" id="emailError">
+  <p>Your last name must be at least 2 characters long</p>
+</div>
+
 <div class="input-space">
   <label for="postcode"></label>
   <input
     class="field-style"
     type="text"
-    id="postcode"
+    id="postCode"
     name="postcode"
-    placeholder="postcode"
+    placeholder="postode"
   />
 </div>
+
+<div class="form-error" id="postCodeError">
+  <p>Your last name must be at least 2 characters long</p>
+</div>
+
 <div class="input-space">
   <label for="city"></label>
   <input
@@ -163,6 +204,11 @@
     placeholder="City"
   />
 </div>
+
+<div class="form-error" id="lastNameError">
+  <p>Your last name must be at least 2 characters long</p>
+</div>
+
 <div class="input-space">
   <label for="address"></label>
   <input
@@ -173,29 +219,44 @@
     placeholder="address"
   />
 </div>
+
+<div class="form-error" id="addressError">
+  <p>Your last name must be at least 2 characters long</p>
 </div>
+
 </section>
-<section class="main-container">
+
 <div>
+  
 <h2>Payment details</h2>
 <div class="input-space">
   <input
     class="field-style"
     type="text"
-    id="cname"
-    name="cardname"
+    id="cardName"
+    name="cardName"
     placeholder="Card owner name"
   />
 </div>
+
+<div class="form-error" id="cardNameError">
+  <p>Your last name must be at least 2 characters long</p>
+</div>
+
 <div class="input-space">
   <input
     class="field-style"
     type="text"
-    id="cardnumber"
-    name="cardnumber"
+    id="cardNumber"
+    name="cardNumber"
     placeholder="0000-0000-0000-0000"
   />
 </div>
+
+<div class="form-error" id="cartNumberError">
+  <p>Your last name must be at least 2 characters long</p>
+</div>
+
 <div class="input-space">
   <input
     class="field-style"
@@ -205,7 +266,13 @@
     placeholder="MM / DD / YYYY"
   />
 </div>
+
+<div class="form-error" id="dateError">
+  <p>Your last name must be at least 2 characters long</p>
+</div>
+
 <div class="input-space">
+  
   <input
     class="field-style"
     type="text"
@@ -215,9 +282,14 @@
   />
 </span>
 </div>
+
+<div class="form-error" id="cvvError">
+  <p>Your last name must be at least 2 characters long</p>
 </div>
-</section>
-<div class="main-container top-space">
+
+</div>
+
+<div class="top-space">
 <div>
 <input type="checkbox" id="checkbox" name="checkbox" value="check" />
 <label for="checkbox"> </label>
@@ -226,11 +298,23 @@
   >I confirm I have read and agree to the terms & conditions</span
 >
 </div>
-</div> 
+
 
     <div class="main-container high-top-space">
-      <a href="ordercomplete.html" class="cta button-view-games"
-      >Complete order</a>
+
+
+
+
+
+      <div id="message"></div>
+      <button class="link-button-2 bold-text top-space contact-button-js">
+        Submit
+      </button>
+    </div>
+  </div> 
+
+</form>
+  </div>
 </div>
 </div>
     <footer>
@@ -238,8 +322,8 @@
         <i class="fab fa-instagram-square fa-3x footer-logo"></i>
         <i class="fab fa-facebook fa-3x footer-logo"></i>
       </div>
-    </footer>
-
+    </footer> 
+    
   </body>
 </html>
 

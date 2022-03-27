@@ -1,24 +1,30 @@
 let cartCount = 0;
 
-const cartCounter = document.querySelector(".cart-counter");
+let cartCounters = document.getElementsByClassName("cart-counter");
+console.log(cartCounters);
 
 function addToCart(e) {
-  // e.text.includes("Buy")
+  addOneToCart = false;
+
   if (e.text.toLowerCase().includes("buy")) {
     e.text = "ADDED TO CART";
     e.style.color = "white";
     cartCount++;
-    cartCounter.style.display = "block";
   } else {
     e.text = "Buy";
     e.style.color = "#ff984f";
     cartCount--;
+  }
+
+  for (const [key, cartCounter] of Object.entries(cartCounters)) {
     if (cartCount === 0) {
       cartCounter.style.display = "none";
     }
-  }
 
-  console.log(cartCounter);
-  cartCounter.innerHTML = cartCount;
-  console.log(cartCount);
+    if (e.text.toUpperCase().includes("ADDED TO CART")) {
+      cartCounter.style.display = "block";
+    }
+
+    cartCounter.innerHTML = cartCount;
+  }
 }
