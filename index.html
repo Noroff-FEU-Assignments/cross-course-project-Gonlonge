@@ -42,8 +42,6 @@
 </head>
 
 <body>
-
-
   <div class="main-container ">
     <header class="logo-container">
       <a href="index.html"><img src="images/logo.png" alt="logo" class="gamehub-logo header-desktop" /></a>
@@ -63,15 +61,12 @@
       </a>
       <div class="topnav">
         <a href="index.html" class="home-site space-desktop text-color">Home</a>
-
         <a href="viewallgames.html" class="space-desktop  text-color">All Games</a>
-
         <a href="contact.html" class=" text-color">Contact Us</a>
       </div>
     </div>
   </div>
   </header>
-
 
   <div class="main-container ">
     <header class="logo-container ">
@@ -98,9 +93,7 @@
       <nav>
         <ul>
           <li><a href="index.html" class="home-site">HOME</a></li>
-
           <li><a href="viewallgames.html">ALL GAMES</a></li>
-
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -108,179 +101,29 @@
   </div>
   </header>
   <div class="main-container">
-
     <div class="section-space">
-      <h1>Most Popular Games</h1>
     </div>
-    <div class="featured">
-      <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content main-container">
-          <span class="close">&times;</span>
-          <h2>Metroid Dread</h2>
-          <div class="modal-cover ">
-            <img src="images/cover1.jpg" alt="game covers" />
-          </div>
-          <p id="gameInfo"></p>
-          <a onclick="addToCart(this)" class="link-button"> Buy </a>
-        </div>
-      </div>
-      <div class="column">
-        <button class="mybtn-color modalBtn">
-          <img src="images/cover1.jpg" alt="game covers" />
-        </button>
-        <!-- The Modal -->
+    <h1>All Games</h1>
+ 
 
-        <p class="text-space">Game Title</p>
-        <p class="bold-text">50€</p>
-        <a onclick="addToCart(this)" class="link-button"> Buy </a>
-      </div>
-      <div class="column">
-        <button class="mybtn-color modalBtn">
-          <img src="images/cover2.jpg" alt="game covers" />
-        </button>
-        
-        <p class="text-space">Game Title</p>
-        <p class="bold-text">50€</p>
-        <a onclick="addToCart(this)" class="link-button"> Buy </a>
-      </div>
-      <div class="column">
-        <button class="mybtn-color modalBtn">
-          <img src="images/cover3.jpg" alt="game covers" />
-        </button>
-        <p class="text-space">Game Title</p>
-        <p class="bold-text">50€</p>
-        <a onclick="addToCart(this)" class="link-button"> Buy </a>
-      </div>
-      <div class="column">
-        <button class="mybtn-color modalBtn">
-          <img src="images/cover2.jpg" alt="game covers" />
-        </button>
-        <p class="text-space">Game Title</p>
-        <p class="bold-text">50€</p>
-        <a onclick="addToCart(this)" class="link-button"> Buy </a>
-      </div>
+    <div class="featured products-list product-img color-js">
+    </div>  
     </div>
-
-    <div class="button-container top-space">
-      <a class="cta button-view-games" href="viewallgames.html">
-        View all Games
-      </a>
-    </div>
-    <div class="section-space">
-      <div class="line"></div>
-
-      <h1>Games for Sale</h1>
-      <div class="featured">
-        <div class="column">
-          <button class="mybtn-color modalBtn">
-            <img src="images/cover5.jpg" alt="game covers" />
-          </button>
-          <p class="text-space">Game Title</p>
-          <div class="space"></div>
-          <span class="bold-text orange push-left">30€</span>
-          <span class="bold-text push-right sale">50€</span>
-          <div class="high-top-space">
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-        </div>
-        <div class="column">
-          <button class="mybtn-color modalBtn">
-            <img src="images/cover2.jpg" alt="game covers" />
-          </button>
-          <p class="text-space">Game Title</p>
-          <span class="bold-text orange push-left">30€</span>
-          <span class="bold-text push-right sale">50€</span>
-          <div class="high-top-space">
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-        </div>
-        <div class="column">
-          <button class="mybtn-color modalBtn">
-            <img src="images/cover4.jpg" alt="game covers" />
-          </button>
-          <div class="price-container">
-            <p class="text-space">Game Title</p>
-
-            <span class="bold-text orange push-left">30€</span>
-            <span class="bold-text push-right sale">50€</span>
-            <div class="high-top-space"></div>
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-        </div>
-        <div class="column">
-          <button class="mybtn-color modalBtn">
-            <img src="images/cover5.jpg" alt="game covers" />
-          </button>
-          <p class="text-space">Game Title</p>
-
-          <span class="bold-text orange push-left">30€</span>
-          <span class="bold-text push-right sale">50€</span>
-          <div class="high-top-space">
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-        </div>
+    <footer>
+      <div class="main-container">
+        <i class="fab fa-instagram-square fa-3x footer-logo"></i>
+        <i class="fab fa-facebook fa-3x footer-logo"></i>
       </div>
+   
+    </footer>
+    <script src="js/cart.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/cms.js"></script>
+    <script>
+      getProducts();
+    </script>
 
-      <div class="button-container top-space">
-        <a class="cta button-view-games" href="viewallgames.html">
-          View all Games
-        </a>
-      </div>
-      <div class="section-space">
-        <div class="line"></div>
-        <h1>Pre-Owned Games</h1>
-        <div class="featured">
-          <div class="column">
-            <button class="mybtn-color modalBtn">
-              <img src="images/cover2.jpg" alt="game covers" />
-            </button>
-            <p class="text-space">Game Title</p>
-            <p class="bold-text">50€</p>
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-          <div class="column">
-            <button class="mybtn-color modalBtn">
-              <img src="images/cover1.jpg" alt="game covers" />
-            </button>
-            <p class="text-space">Game Title</p>
-            <p class="bold-text">50€</p>
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-          <div class="column">
-            <button class="mybtn-color modalBtn">
-              <img src="images/cover3.jpg" alt="game covers" />
-            </button>
-            <p class="text-space">Game Title</p>
-            <p class="bold-text">50€</p>
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-          <div class="column">
-            <button class="mybtn-color modalBtn">
-              <img src="images/cover2.jpg" alt="game covers" />
-            </button>
-            <p class="text-space">Game Title</p>
-            <p class="bold-text">50€</p>
-            <a onclick="addToCart(this)" class="link-button"> Buy </a>
-          </div>
-        </div>
-        <div class="button-container top-space">
-          <a class="cta button-view-games" href="viewallgames.html">
-            View all Games
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer>
-    <div class="main-container">
-      <i class="fab fa-instagram-square fa-3x footer-logo"></i>
-      <i class="fab fa-facebook fa-3x footer-logo"></i>
-    </div>
 
-  </footer>
-  <script src="js/cart.js"></script>
-  <script src="js/index.js"></script>
 </body>
 
 </html>
