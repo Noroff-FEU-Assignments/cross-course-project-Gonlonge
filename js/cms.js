@@ -20,7 +20,6 @@ async function getProduct(productId) {
 
     cartPrice.innerHTML = `${game.name} ${game.prices.currency_code} ${game.prices.price} `;
     description.innerHTML = `${game.description}`;
-
     img.innerHTML = `<img src="${game.images[0].src}"/>`;
   } catch (error) {}
 }
