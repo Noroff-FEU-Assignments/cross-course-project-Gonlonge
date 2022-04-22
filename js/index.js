@@ -66,3 +66,5 @@ window.onclick = function (event) {
 //Info about the game
 let gameInfo = (document.getElementById("gameInfo").innerHTML =
   "Metroid Dread is the direct sequel to the game Metroid Fusion from 2002, and is the end of a saga that extends over five games. The bounty hunter Samus must go here alone to explore a mysterious. Dread could already be the series' all-time best-seller, according to Gamehub.");
+
+//* shope games *//
