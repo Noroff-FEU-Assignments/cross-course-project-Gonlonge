@@ -32,6 +32,16 @@ async function getProducts() {
     const getResults = await response.json();
     console.log(getResults);
 
+    getResults.sort(function (a, b) {
+      if (a.name < b.name) {
+        return -1;
+      }
+      if (a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
+
     getResults.forEach((game) => {
       productContainer.innerHTML += `<a href="buy.html?id=${game.id}">
       <div class="products">
