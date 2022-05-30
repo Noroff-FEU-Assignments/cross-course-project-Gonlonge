@@ -1,6 +1,6 @@
 # Cross Course Project
 
-#  NB! THIS HOME PAGE HAVE BEEN DONE LOT OF CHANGES AND THINGS WILL BE MISSING. THINGS THAT I HAVE REMOVED.
+##  NB! THIS HOME PAGE HAVE BEEN DONE LOT OF CHANGES AND THINGS WILL BE MISSING. THINGS THAT I HAVE REMOVED.
 
 
 
@@ -9,7 +9,7 @@ Date: 20
 11.2021
 
 ## Brief
-For this course assessment was about to create our first home page we designed in adobe xd.
+For this course assessment was about to create our first home page we designed in Adobe XD.
 
 ## Built With
 
@@ -17,25 +17,14 @@ For this course assessment was about to create our first home page we designed i
 - CSS
 - JavaScript
 
-### Installing
+## Designed With
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
+Adobe XD
 
-1. Clone the repo:
+## Clone the repo
 
 ```bash
 https://github.com/Noroff-FEU-Assignments/cross-course-project-Gonlonge.git
-```
-
-
-
-
-
-
-2. Install the dependencies:
-
-```
-npm install
 ```
 
 ### Running
@@ -48,22 +37,9 @@ To run the app, run the following commands:
 npm run start
 ```
 
-## Contributing
+## Test the home page
 
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+The website is responsive and works at every screen size.
+The payment section you can add games.
+Fill out the inputs on contact page
 
-## Contact
-
-This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
-
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
