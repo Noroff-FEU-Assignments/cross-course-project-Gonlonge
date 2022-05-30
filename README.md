@@ -27,10 +27,6 @@ Adobe XD
 https://github.com/Noroff-FEU-Assignments/cross-course-project-Gonlonge.git
 ```
 
-```bash
-npm run start
-```
-
 ## Test the home page
 
 The website is responsive and works at every screen size.
