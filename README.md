@@ -8,8 +8,6 @@ College: Noroff - Frondend developer
 Date: 20
 11.2021
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
-
 ## Brief
 For this course assessment was about to create our first home page we designed in adobe xd.
 
@@ -26,8 +24,13 @@ This is where you list how to get the project started. It typically just include
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+https://github.com/Noroff-FEU-Assignments/cross-course-project-Gonlonge.git
 ```
+
+
+
+
+
 
 2. Install the dependencies:
 
