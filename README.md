@@ -5,8 +5,7 @@
 
 
 College: Noroff - Frondend developer
-Date: 20
-11.2021
+Date: 11.2021
 
 ## Brief
 For this course assessment was about to create our first home page we designed in Adobe XD.
