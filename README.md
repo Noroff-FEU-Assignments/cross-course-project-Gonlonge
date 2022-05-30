@@ -1,27 +1,23 @@
-# Your project title
+# Cross Course Project
+
+#  NB! THIS HOME PAGE HAVE BEEN DONE LOT OF CHANGES AND THINGS WILL BE MISSING. THINGS THAT I HAVE REMOVED.
+
+
+
+College: Noroff - Frondend developer
+Date: 20
+11.2021
 
 ![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-A simple overview of the use/purpose of the project.
-
-## Description
-
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+## Brief
+For this course assessment was about to create our first home page we designed in adobe xd.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
-
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
-
-## Getting Started
+- HTML
+- CSS
+- JavaScript
 
 ### Installing
 
